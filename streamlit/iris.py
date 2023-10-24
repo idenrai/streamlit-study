@@ -1,7 +1,6 @@
 import numpy as np
 import pandas as pd
 from sklearn.datasets import load_iris
-import matplotlib.pyplot as plt
 import streamlit as st
 
 iris_dataset = load_iris()
@@ -30,11 +29,11 @@ st.dataframe(df.head())
 # Sidebar
 st.sidebar.title("Iris Species")
 
-# Selectbox
+# Multi Selectbox
 select_species = st.sidebar.selectbox("Species", ["setosa", "versicolor", "virginica"])
 
 # df로부터 선택된 종류만 필터링되어 나오도록 일시적 데이터프레임을 생성
 tmp_df = df[df["species"] == select_species]
 
-st.subheader("Selected Species Data")
+st.subheader("Table")
 st.table(tmp_df.head())
