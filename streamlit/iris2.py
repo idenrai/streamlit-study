@@ -20,21 +20,16 @@ def mapp_species(x):
 df["species"] = df["species"].apply(mapp_species)
 print(df)
 
-st.subheader("Table")
-st.table(df.head())
-
-st.subheader("Data frame")
-st.dataframe(df.head())
-
-
 # Sidebar
 st.sidebar.title("Iris Species")
 
-# Selectbox
-select_species = st.sidebar.selectbox("Species", ["setosa", "versicolor", "virginica"])
+# Multi Selectbox
+select_species = st.sidebar.multiselect(
+    "Species", ["setosa", "versicolor", "virginica"]
+)
 
 # df로부터 선택된 종류만 필터링되어 나오도록 일시적 데이터프레임을 생성
-tmp_df = df[df["species"] == select_species]
+tmp_df = df[df["species"].isin(select_species)]
 
-st.subheader("Selected Species Data")
+st.subheader("Table")
 st.table(tmp_df.head())

@@ -27,8 +27,15 @@ pip install -r requirements.txt
 ## 실행
 
 ```terminal
+streamlit run ./streamlit/[파일명]
+```
+
+이하와 같이 사용
+
+```terminal
 streamlit run ./streamlit/sample.py
 streamlit run ./streamlit/iris.py
+streamlit run ./streamlit/iris2.py
 ```
 
 ## Package
