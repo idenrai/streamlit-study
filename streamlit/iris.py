@@ -10,7 +10,6 @@ df = pd.DataFrame(data=iris_dataset.data, columns=iris_dataset.feature_names)
 df.columns = [col_name.split(" (cm)")[0] for col_name in df.columns]
 df["species"] = iris_dataset.target
 
-
 species_dict = {0: "setosa", 1: "versicolor", 2: "virginica"}
 
 
@@ -26,3 +25,16 @@ st.table(df.head())
 
 st.subheader("Data frame")
 st.dataframe(df.head())
+
+
+# Sidebar
+st.sidebar.title("Iris Species")
+
+# Selectbox
+select_species = st.sidebar.selectbox("Species", ["setosa", "versicolor", "virginica"])
+
+# df로부터 선택된 종류만 필터링되어 나오도록 일시적 데이터프레임을 생성
+tmp_df = df[df["species"] == select_species]
+
+st.subheader("Selected Species Data frame")
+st.table(tmp_df.head())
