@@ -5,6 +5,7 @@
 ### 파이썬 설치 및 가상환경 만들기
 
 ```terminal
+brew update && brew upgrade pyenv
 pyenv install 3.11.6
 python local 3.11.6
 pyenv virtualenv 3.11.6 sl-venv
