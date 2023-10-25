@@ -57,6 +57,12 @@ Plotly Chart
 streamlit run ./streamlit/plot.py
 ```
 
+Map
+
+```terminal
+streamlit run ./streamlit/map.py
+```
+
 ## Package
 
 패키지를 추가할 경우, 이하 커맨드를 실행할 것
