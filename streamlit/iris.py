@@ -29,7 +29,7 @@ st.dataframe(df.head())
 # Sidebar
 st.sidebar.title("Iris Species")
 
-# Multi Selectbox
+# Selectbox
 select_species = st.sidebar.selectbox("Species", ["setosa", "versicolor", "virginica"])
 
 # df로부터 선택된 종류만 필터링되어 나오도록 일시적 데이터프레임을 생성

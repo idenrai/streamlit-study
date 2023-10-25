@@ -31,12 +31,30 @@ pip install -r requirements.txt
 streamlit run ./streamlit/[파일명]
 ```
 
-이하와 같이 사용
+### 페이지 설명
+
+Learn API
 
 ```terminal
 streamlit run ./streamlit/sample.py
+```
+
+Dataframe with selectbox
+
+```terminal
 streamlit run ./streamlit/iris.py
+```
+
+Dataframe with filter (multiselect, radio, slider, button)
+
+```terminal
 streamlit run ./streamlit/iris2.py
+```
+
+Plotly Chart
+
+```terminal
+streamlit run ./streamlit/plot.py
 ```
 
 ## Package
