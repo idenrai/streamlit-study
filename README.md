@@ -28,40 +28,21 @@ pip install -r requirements.txt
 ## 실행
 
 ```terminal
-streamlit run ./streamlit/[파일명]
+streamlit run ./streamlit/Home.py
 ```
 
 ### 페이지 설명
 
-Learn API
-
-```terminal
-streamlit run ./streamlit/sample.py
-```
-
-Dataframe with selectbox
-
-```terminal
-streamlit run ./streamlit/iris.py
-```
-
-Dataframe with filter (multiselect, radio, slider, button)
-
-```terminal
-streamlit run ./streamlit/iris2.py
-```
-
-Plotly Chart
-
-```terminal
-streamlit run ./streamlit/plot.py
-```
-
-Map
-
-```terminal
-streamlit run ./streamlit/map.py
-```
+- LearnAPI
+  - 기본적인 사용법 습득
+- Selectbox
+  - selectbox를 이용한 Dataframe 필터링
+- Filter
+  - Dataframe with filter (multiselect, radio, slider, button)
+- Plot
+  - Plotly Chart
+- Map
+  - 지도 표시
 
 ## Package
 
