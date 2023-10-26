@@ -8,23 +8,21 @@ import pandas as pd
 
 st.session_state.lat = st.sidebar.number_input(
     label="lat",
-    step=0.000001,
+    step=0.01,
     value=35.542635,
     format="%f",
 )
 st.session_state.lon = st.sidebar.number_input(
     label="lon",
-    step=0.000001,
+    step=0.01,
     value=139.445226,
     format="%f",
 )
 
 base_position = [st.session_state["lat"], st.session_state["lon"]]
 
-
 map_data = pd.DataFrame(
-    np.random.randn(1, 1) / [20, 20] + base_position,
-    # base_position,
+    [base_position],
     columns=["lat", "lon"],
 )
 
