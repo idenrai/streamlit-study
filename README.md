@@ -13,12 +13,6 @@ pyenv activate sl-venv
 pip install --upgrade pip
 ```
 
-### Streamlit 설치
-
-```terminal
-pip install streamlit
-```
-
 ### Package Install
 
 ```terminal
@@ -43,6 +37,7 @@ streamlit run ./streamlit/Home.py
   - Plotly Chart
 - Map
   - 지도 표시
+  - session_state 이용방법 습득
 
 ## Package
 
