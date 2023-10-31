@@ -7,7 +7,7 @@
 ```terminal
 brew update && brew upgrade pyenv
 pyenv install 3.11.6
-python local 3.11.6
+pyenv local 3.11.6
 pyenv virtualenv 3.11.6 sl-venv
 pyenv activate sl-venv
 pip install --upgrade pip
