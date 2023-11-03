@@ -36,8 +36,10 @@ if st.sidebar.button("샘플 텍스트 작성"):
 
 # Main Page
 text_value = st.text_area("Question", "")
-st.write(f"You wrote {len(text_value)} characters.")
 
 # Submit
 if st.button("Submit"):
-    st.toast(text_value)
+    if not text_value:
+        st.warning("질문을 입력해 주세요.")
+    else:
+        st.toast(text_value)
