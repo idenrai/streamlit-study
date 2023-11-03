@@ -21,7 +21,6 @@ lang_list = st.sidebar.multiselect(
 
 if st.sidebar.button("샘플 텍스트 작성"):
     lang = ", ".join(lang_list)
-    print(lang)
 
     sample = SAMPLE_TEXT_1
     sample += f"사원번호 : {code}\n"
