@@ -35,6 +35,7 @@ st.sidebar.text("샘플 텍스트 버튼을 누르면\n샘플 텍스트를 취�
 # 결과 : 성공
 # 이유 : text area에 직접적인 영향을 미치지 않음. 복사 붙여넣기는 유저 입력으로 인식되어 버튼과 관계 없음
 text_value = st.text_area("Question", "")
+
 if st.sidebar.button("샘플 텍스트"):
     pc.copy(SAMPLE_TEXT)
     st.sidebar.success("샘플 텍스트를 복사하였습니다.\n Teax Area에 Ctrl + v 를 사용해 붙여넣기 해 주세요.")
